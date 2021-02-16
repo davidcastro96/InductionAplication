@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 app.use(require('./routes/index'));
 
 let renderHTML = path.resolve(__dirname, '../public/index.html');
+
 app.get('/', function (req, res) {
     res.sendFile(renderHTML);
 })
